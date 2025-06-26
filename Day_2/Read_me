@@ -1,0 +1,56 @@
+variables
+
+Data Types:
+ -Integer         -   4 bytes
+    Long          -  8 bytes
+    Short         -  2 bytes
+    byte          -   1 byte
+
+ -Float           -   4 bytes  
+    Double        -   8 bytes------In Java we hava double in Default
+ -Character       -   2 bytes
+ -Boolean         -    True or False
+
+
+  byte
+   * Size: 8-bit signed two's complement integer
+   * Minimum Value: -128 (Byte.MIN_VALUE)
+   * Maximum Value: 127 (Byte.MAX_VALUE)
+ * short
+   * Size: 16-bit signed two's complement integer
+   * Minimum Value: -32,768 (Short.MIN_VALUE)
+   * Maximum Value: 32,767 (Short.MAX_VALUE)
+ * int
+   * Size: 32-bit signed two's complement integer
+   * Minimum Value: -2,147,483,648 (Integer.MIN_VALUE)
+   * Maximum Value: 2,147,483,647 (Integer.MAX_VALUE)
+ * long
+   * Size: 64-bit signed two's complement integer
+   * Minimum Value: -9,223,372,036,854,775,808 (Long.MIN_VALUE)
+   * Maximum Value: 9,223,372,036,854,775,807 (Long.MAX_VALUE)
+Floating-Point Data Types
+These data types store numbers with decimal points. They follow the IEEE 754 standard for floating-point arithmetic.
+ * float
+   * Size: 32-bit single-precision floating-point
+   * Minimum Value: Approximately 1.4 \\times 10^{-45} (positive, closest to zero, Float.MIN_VALUE)
+   * Maximum Value: Approximately 3.4 \\times 10^{38} (Float.MAX_VALUE)
+   * Note: Float.MIN_VALUE actually represents the smallest positive non-zero value. The smallest (most negative) value is -Float.MAX_VALUE.
+ * double
+   * Size: 64-bit double-precision floating-point
+   * Minimum Value: Approximately 4.9 \\times 10^{-324} (positive, closest to zero, Double.MIN_VALUE)
+   * Maximum Value: Approximately 1.8 \\times 10^{308} (Double.MAX_VALUE)
+   * Note: Similar to float, Double.MIN_VALUE represents the smallest positive non-zero value. The smallest (most negative) value is -Double.MAX_VALUE.
+Other Primitive Data Types (Non-Numeric Range)
+While not having a numerical range in the same way, it's good to be aware of these:
+ * char
+   * Size: 16-bit Unicode character
+   * Minimum Value: \u0000 (or 0)
+   * Maximum Value: \uffff (or 65,535)
+   * Note: char stores characters, but it's an unsigned integer type, so it can be treated numerically.
+ * boolean
+   * Size: Not precisely defined by the JVM, but conceptually 1 bit.
+   * Values: true or false
+   * Note: It does not have a numerical range.
+How to Access These Values in Java
+You can easily access these min/max values programmatically using the wrapper classes for each primitive type:
+
